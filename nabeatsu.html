@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>nabeatu</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        function nabeatu(i) {
+            if (i % 3 === 0 || i.toString().match(/3/)) {
+                return i + '!';
+            }
+            return i;
+        }
+
+        let num = 1;
+        while (num <= 100) {
+            console.log(nabeatu(num));
+            num += 1;
+        }
+    </script>
+</body>
+</html>
