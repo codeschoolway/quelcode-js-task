@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>FizzBuzz</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        function fizzbuzz(i) {            
+            if (i % 3 === 0 && i % 5 === 0) {
+                return 'FizzBuzz';
+            } else if (i % 3 === 0) {
+                return 'Fizz';
+            } else if (i % 5 === 0) {
+                return 'Buzz';
+            } else {
+                return i;
+            }
+        }
+
+        let num = 1;
+        while (num <= 100) {
+            console.log(fizzbuzz(num));
+            num += 1;
+        }
+
+    </script>
+</body>
+</html>
